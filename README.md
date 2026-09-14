@@ -49,6 +49,8 @@ O projeto foi implementado com as seguintes tecnologias:
 
 ### Execução do projeto
 
+Link do Vídeo do Código Funcionando: [video](/video.mp4)
+
 Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Abra o terminal na raiz do projeto.
