@@ -49,8 +49,6 @@ O projeto foi implementado com as seguintes tecnologias:
 
 ### Execução do projeto
 
-Link do Vídeo do Código Funcionando: [video](/video.mp4)
-
 Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Abra o terminal na raiz do projeto.
@@ -92,5 +90,9 @@ Em alguns ambientes, isso exige permitir o acesso público às portas utilizadas
 - backend: `3001`
 
 Se as portas não estiverem expostas, a aplicação pode falhar ao tentar acessar a API mesmo com o CORS configurado corretamente.
+
+### Executando o Projeto
+
+[Vídeo do Código em Funcionamento (Desktop)](/video.mp4)
 
 ---
