@@ -336,17 +336,21 @@ function App() {
                     <span>{post.rating} ★</span>
                   </div>
 
-                  <div className="rating-row">
-                    {[1, 2, 3].map((value) => (
-                      <button
-                        key={value}
-                        type="button"
-                        className={post.my_rating === value ? 'star selected' : 'star'}
-                        onClick={() => handleRating(post.id, value)}
-                      >
-                        ★
-                      </button>
-                    ))}
+                  <div className="rating-block">
+                    <span className="rating-label">Sua avaliação</span>
+                    <div className="rating-row" aria-label="Avaliação">
+                      {[1, 2, 3].map((value) => (
+                        <button
+                          key={value}
+                          type="button"
+                          className={post.my_rating !== null && value <= post.my_rating ? 'star selected' : 'star'}
+                          onClick={() => handleRating(post.id, value)}
+                          title={`Avaliar com ${value} estrela${value > 1 ? 's' : ''}`}
+                        >
+                          ★
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="comment-list">

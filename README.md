@@ -80,6 +80,15 @@ A API fica disponível em:
 http://localhost:3001
 ```
 
+### Observação
 
+Ao resolver o problema de CORS e rodar a aplicação em um ambiente com acesso externo ou em containers/servidores remotos, pode ser necessário liberar as portas do frontend e do backend manualmente para que o navegador e a API consigam se comunicar corretamente.
+
+Em alguns ambientes, isso exige permitir o acesso público às portas utilizadas, por exemplo:
+
+- frontend: `5173`
+- backend: `3001`
+
+Se as portas não estiverem expostas, a aplicação pode falhar ao tentar acessar a API mesmo com o CORS configurado corretamente.
 
 ---
